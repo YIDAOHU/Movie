@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}列表页{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+
+{% block main %} 
+    <ul>
+        {% for film in films %}
+            <li>
+            <div class="avatar-group">
+                <img src="{{ url_for('static', filename='images/02.jpg') }}" alt="picture" class="avatar">
+            </div>
+            <div class="question-group">
+                <p class="question-title"><a href="{{ url_for('detail',film_id=film.id) }}">{{ film.title }}</a></p>
+                <p class="question-cotent">演员：{{ film.actors }}</p>
+
+
+            <div class="question-info">
+                <span class="question-author">电影类别：{{ film.classify }}</span>
+
+            </div>
+            </div>
+        </li>
+        {% endfor %}
+
+    </ul>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'base.html'%}
+
+{% block title %}详情{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/detail.css') }}">
+{% endblock %}
+
+{% block main %}
+    <h3 class="page-title">{{ film.title }}</h3>
+    <p class="questions-info">
+        <span>类别：{{ film.classify}}</span>
+
+    </p>
+    <p class="question-content">
+    <h4>简介：</h4>
+        {{ film.content }}
+    </p>
+    <div style="text-align: center">
+        <img  src="{{ film.cover_url }}" alt="">
+    </div>
+
+    <br>
+    <br>
+    <h4>下载地址:</h4>
+    <h5>迅雷链接：</h5>
+    <a href="{{ film.thunder_url }}">{{ film.title }}</a>
+    <h5>磁力链接：</h5>
+    <a href="{{ film.magnet_url }}">{{ film.title }}</a>
+    <br>
+    <br>
+    <br>
+
+{% endblock %}

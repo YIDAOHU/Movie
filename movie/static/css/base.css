@@ -1,0 +1,15 @@
+body{
+    background: #F3F3F3;
+}
+
+.main{
+    width: 730px;
+    background: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.page-title{
+    text-align: center;
+}
