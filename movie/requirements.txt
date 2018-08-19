@@ -2,7 +2,6 @@ Flask==1.0.1
 Flask-Migrate==2.1.1
 Flask-Script==2.0.6
 Flask-SQLAlchemy==2.3.2
-lxml==4.2.1
 MySQL-python==1.2.5
 requests==2.18.4
 
