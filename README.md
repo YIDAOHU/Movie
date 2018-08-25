@@ -6,5 +6,5 @@ python manage.py db init  <br>
 python manage.py db migrate  <br>
 python manage.py db upgrade  <br>
 接着运行爬虫程序将数据写入MySQL，启动项目即可。 <br>
-![首页](https://images2018.cnblogs.com/blog/1242176/201804/1242176-20180430190251050-1303022951.png)
+![首页](http://p9fggg4wd.bkt.clouddn.com/black.png)
 
